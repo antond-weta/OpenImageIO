@@ -137,6 +137,7 @@ NB_MODULE(_OpenImageIO, m)
 {
     m.doc() = "OpenImageIO nanobind bindings.";
 
+    PyOpenImageIO::declare_colorconfig(m);
     PyOpenImageIO::declare_typedesc(m);
     PyOpenImageIO::declare_paramvalue(m);
     PyOpenImageIO::declare_roi(m);
