@@ -260,10 +260,11 @@ macro (oiio_add_all_tests)
         oiio_tests_pythonpath_env_entry (_nanobind_tests_pythonpath
             "${CMAKE_BINARY_DIR}/lib/python/nanobind")
         set (nanobind_python_tests
-             python-imagespec
-             python-paramlist
-             python-roi
-             python-typedesc)
+            python-colorconfig
+            python-imagespec
+            python-paramlist
+            python-roi
+            python-typedesc)
         set (nanobind_python_test_suffix ".nanobind")
         if (OIIO_BUILD_PYTHON_PYBIND11)
             oiio_add_tests (

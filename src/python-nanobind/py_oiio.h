@@ -34,6 +34,8 @@ TypeDesc
 typedesc_from_python_array_code(string_view code);
 
 void
+declare_colorconfig(nb::module_& m);
+void
 declare_roi(nb::module_& m);
 void
 declare_imagespec(nb::module_& m);
